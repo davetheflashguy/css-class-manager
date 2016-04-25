@@ -3,7 +3,18 @@
 class Ccm {
    constructor(element) {
       this.element = element;
-      console.log("hello world...");
+   }
+
+   function addClass(className){
+      this.element.classList.add(className);
+   }
+
+   function removeClass(className){
+      this.element.classList.remove(className);
+   }
+
+   function hasClass(className){
+      return this.element.classList.contains(className);
    }
 }
 
